@@ -9,7 +9,7 @@ public class ApiConfig implements WebMvcConfigurer {
 
     @Override
     public void configureApiVersioning(ApiVersionConfigurer configurer) {
-        configurer.useQueryParam("version");
+        configurer.useRequestHeader("X-API-Version");
     }
 
 }
